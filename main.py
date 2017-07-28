@@ -4,7 +4,7 @@
 from common import *
 
 def main():
-    data = random_generator(100, 10, 100)
+    data = random_generator_i(100, 10, 200)
     print len(data), data
 
 if __name__ == "__main__":
