@@ -4,8 +4,11 @@
 from common import *
 
 def main():
-    data = random_generator_i(100, 10, 200)
-    print len(data), data
+    data = random_generator_i(1000, 1, 20000)
+    print "mean:", mean(data)
+    print "median:", median(data)
+    hist(data, breaks = 30)
+    saveimg("data.png")
 
 if __name__ == "__main__":
     main()
